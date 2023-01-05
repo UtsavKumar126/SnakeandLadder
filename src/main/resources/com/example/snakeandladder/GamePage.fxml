@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakeandladder.GamePageController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <ImageView fitWidth="600" fitHeight="120" layoutX="110" layoutY="50">
+            <image>
+                <Image url="@title.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitWidth="200" fitHeight="200" layoutX="300" layoutY="200" onMouseClicked="#start">
+            <image>
+                <Image url="@playButton.png"/>
+            </image>
+        </ImageView>
+    </children>
+
+</AnchorPane>

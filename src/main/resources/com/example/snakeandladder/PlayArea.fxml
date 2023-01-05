@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakeandladder.PlayAreaController"
+            prefHeight="400.0" prefWidth="600.0">
+<children>
+    <ImageView fitWidth="500" fitHeight="495" layoutX="300" >
+        <image>
+            <Image url="@gameboard.jpg"/>
+        </image>
+    </ImageView>
+    <ImageView fx:id="player1" fitWidth="20" fitHeight="40" layoutX="250" layoutY="450">
+        <image>
+            <Image url="@images.png"/>
+        </image>
+    </ImageView>
+    <ImageView fx:id="player2" fitWidth="20" fitHeight="40" layoutX="270" layoutY="450">
+        <image>
+            <Image url="@images2.png"/>
+        </image>
+    </ImageView>
+    <ImageView fitWidth="50" fitHeight="50" layoutX="150" layoutY="150" onMouseClicked="#roll">
+        <image>
+            <Image url="@dice.jpg"/>
+        </image>
+    </ImageView>
+    <ImageView fitWidth="20" fitHeight="40" layoutX="50" layoutY="300">
+        <image>
+            <Image url="@images.png"/>
+        </image>
+    </ImageView>
+    <Text layoutX="150" layoutY="300" text="Player 1" underline="true"></Text>
+    <Text layoutX="150" layoutY="400" text="Player 2" underline="true"></Text>
+    <ImageView fitWidth="20" fitHeight="40" layoutX="50" layoutY="400">
+        <image>
+            <Image url="@images2.png"/>
+        </image>
+    </ImageView>
+    <Text fx:id="changeTurn" layoutX="130" layoutY="100" style="-fx-font-weight:bold" text="Player 1's Turn"></Text>
+    <Text fx:id="number" layoutY="250" layoutX="170" style="-fx-font-weight:bold"></Text>
+</children>
+</AnchorPane>
